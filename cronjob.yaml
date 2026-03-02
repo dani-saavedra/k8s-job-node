@@ -3,7 +3,7 @@ kind: CronJob
 metadata:
   name: ejemplo-cronjob-node
 spec:
-  schedule: "*/5 * * * *"   # Cada 5 minutos
+  schedule: "*/3 * * * *"   # Cada 5 minutos
   concurrencyPolicy: Forbid
   successfulJobsHistoryLimit: 3
   failedJobsHistoryLimit: 1
@@ -15,4 +15,4 @@ spec:
           restartPolicy: Never
           containers:
             - name: node-cronjob
-              image: tuusuario/k8s-cronjob-example:1.0
+              image: danielink28/joyeria:2.0
