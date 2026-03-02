@@ -15,4 +15,4 @@ spec:
           restartPolicy: Never
           containers:
             - name: node-cronjob
-              image: danielink28/joyeria:2.0
+              image: danielsabana/joyeria:2.0
